@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEP新宿</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&family=Allison&family=Birthstone&family=Charm:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- パーティクル（createjs）の定義 -->
+    <div class="back-container">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <!-- ハンバーガーメニュー -->
+            <div class="nav__wrapper">
+                <!-- ナビゲーションメニュー -->
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#illumination">Illumination</a></li>
+                        <li class="nav__item"><a href="#photos">Photos</a></li>
+                        <li class="nav__item"><a href="#movie">Movie</a></li>
+                        <li class="nav__item"><a href="#maps">Google Maps</a></li>
+                        <li class="nav__item"><a href="#member">Member</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- ハンバーガーボタン -->
+            <div class="menu__container">
+                <div class="menu__circle">
+                    <div class="liner__wrapper burger__btn">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- メインビジュアル背景 -->
+    <div class="background__image">
+        <div class="video-box overlay">
+            <video src="./images/illumination.mp4" type="video/mp4" class="video" muted autoplay loop
+                playsinline />
+        </div>
+        <!-- トップ画面 -->
+        <div class="main__visual">
+            <img src="./images/main__logo.png" alt="main__logo" class="main__logo">
+            <h3>Illumination</h3>
+            <!-- 黄色＆紫色 -->
+
+            <div class="arr__container">
+                <img src="./images/Y.svg" alt="Ybackground" class="y__image">
+                <a href="#maps">
+                    <div class="arr down">
+                        <div></div>
+                    </div>
+                </a>
+            </div>
+            <div class="arr__container2">
+                <img src="./images/P.svg" alt="Pbackground" class="p__image">
+                <a href="#illumination">
+                    <div class="arr2 down">
+                        <div></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main class="wrapper">
+        <article class="illumination__wrapper">
+            <div class="illumination__header__div">
+                <h2 class="illumination__header">2023</h2>
+                <h2 class="illumination__header">Illumination</h2>
+                <img src="./images/yellow-circle1.png" alt="yellow-circle" class="yellow-circle1">
+                <img src="./images/yellow-circle1.png" alt="yellow-circle" class="yellow-circle2">
+            </div>
+            <div class="illumination__introduction" id="test">
+                <h3>イルミネーション紹介</h3>
+                <p>
+                    新宿のイルミネーションは、都会の喧騒から離れ、幻想的な光景に包まれる絶妙な場所です。洗練されたデザインと輝く光が夜空を彩り、訪れる人々に心温まる体験を提供します。新宿の煌めく夜を彩る美しいイルミネーションで心ときめくひとときをお楽しみください。
+                </p>
+                <img src="./images/yellow-circle-tr.png" alt="yellow-circle-tr" class="yellow-circle-tr">
+                <img src="./images/yellow-circle-line.png" alt="yellow-circle-line" class="yellow-circle-line">
+                <img src="./images/purple-circle-tr.png" alt="purple-circle-tr" class="purple-circle-tr">
+                <img src="./images/purple-circle-line.png" alt="purple-circle-line" class="purple-circle-line">
+            </div>
+
+            <figure class="yellow-line">
+                <img src="./images/line.svg" alt="line">
+            </figure>
+
+            <div class="illumination__content illumination__content1" id="illumination">
+                <h3>新宿イーストビルイルミネーション</h3>
+                <div class="illumination__content__flex illumination__content__flex1">
+                    <div class="illumination__content__image">
+                        <img src="./images/content__image1.png" alt="content__image1" class="content__image">
+                        <img src="./images/yellow-line-snippet.png" alt="yellow-line-snippet"
+                            class="yellow-line-snippet">
+                        <img src="./images/yellow-circle1.png" alt="yellow-circle1" class="yellow-background-circle">
+                        <img src="./images/yellow-circle1.png" alt="yellow-circle1" class="yellow-background-circle2">
+                    </div>
+                    <ul>
+                        <li class="text-line">新宿三丁目イーストビルを幻想的な灯りが包む</li>
+                        <br>
+                        <li>
+                            新宿三丁目イーストビルは、マルイアネックスをはじめ、映画館のバルト、カフェ・ベローチェ、メーカーズシャツ鎌倉のつのテナントが入った商業ビルで、映画やショッピング、休憩にと最適な施設。今年もイルミネーションを開催。
+                        </li>
+                        <br>
+                        <li class="text-line">見どころ</li>
+                        <br>
+                        <li>
+                            甲州街道側から見えるイルミネーションが美しく光り輝き、幻想的な空間を演出する。
+                        </li>
+                        <img src="./images/yellow-line-tr1.png" alt="yellow-line-tr1" class="yellow-line-tr1">
+                        <img src="./images/yellow-line-tr2.png" alt="yellow-line-tr2" class="yellow-line-tr2">
+                    </ul>
+                    <p>introduction</p>
+                </div>
+            </div>
+
+            <div class="illumination__content illumination__content2">
+                <h3>西新宿街ぐるみプロジェクト〈LOVE〉</h3>
+                <div class="illumination__content__flex illumination__content__flex2">
+                    <p>introduction</p>
+                    <ul>
+                        <li class="text-line">西新宿ビル群が一斉点灯</li>
+                        <br>
+                        <li>
+                            クリスマスイルミネーションを鑑賞しながら、夜景をはじめ、各施設で食事やショッピングなど、西新宿の街ぐるみならではの規模感と回遊性を楽しめる。
+                        </li>
+                        <br>
+                        <li class="text-line">見どころ</li>
+                        <br>
+                        <li>
+                            「LOVE」をテーマとするイルミネーションに合わせて、HAL東京でCGやデザインを学ぶ学生が制作する「今年ならではのLOVE＆Christmas」をテーマとした作品を展示。クリスマスイルミネーションとともに、未来を担うクリエイターの卵たちの瑞々しい作品が楽しめる。
+                        </li>
+                        <img src="./images/purple-line-tr1.png" alt="purple-line-tr1" class="purple-line-tr1">
+                        <img src="./images/purple-line-tr2.png" alt="purple-line-tr2" class="purple-line-tr2">
+                    </ul>
+                    <div class="illumination__content__image">
+                        <img src="./images/content__image2.png" alt="content__image2" class="content__image">
+                        <img src="./images/purple-line-snippet.svg" alt="purple-line-snippet"
+                            class="purple-line-snippet">
+                        <img src="./images/purple-circle1.png" alt="purple-circle1" class="purple-background-circle">
+                        <img src="./images/purple-circle1.png" alt="purple-circle1" class="purple-background-circle2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="illumination__content illumination__content3">
+                <h3>新宿中央公園イルミネーションイベント</h3>
+                <div class="illumination__content__flex illumination__content__flex3">
+                    <div class="illumination__content__image">
+                        <img src="./images/content__image3.png" alt="content__image3" class="content__image">
+                        <img src="./images/yellow-line-snippet.svg" alt="yellow-line-snippet"
+                            class="yellow-line-snippet">
+                        <img src="./images/yellow-circle1.png" alt="yellow-circle1" class="yellow-background-circle">
+                        <img src="./images/yellow-circle1.png" alt="yellow-circle1" class="yellow-background-circle2">
+                    </div>
+                    <ul>
+                        <li class="text-line">光の「動き」と「音」で彩る都会のオアシス</li>
+                        <br>
+                        <li>
+                            「音」と光で表現した「動き」が融合したイルミネーションで幻想的な空間を創出する。特に階段の北側と南側は、それぞれ「光」と「水」をテーマにしたライトアップとなり、文字も投影される。
+                        </li>
+                        <br>
+                        <li class="text-line">見どころ</li>
+                        <br>
+                        <li>
+                            眺望のもりにはフォトスポットが設置され、新宿副都心の美しい夜景を背景に記念撮影が楽しめる。また、会場には昼間でも見ることができる動物のオブジェも期間中多数設置される。動物たちは、光り輝くイルミネーションの世界で訪問者を迎える。
+                        </li>
+                        <img src="./images/yellow-line-tr1.png" alt="yellow-line-tr1" class="yellow-line-tr1">
+                        <img src="./images/yellow-line-tr2.png" alt="yellow-line-tr2" class="yellow-line-tr2">
+                    </ul>
+                    <p>introduction</p>
+                </div>
+            </div>
+            <figure class="yellow-line2">
+                <img src="./images/line.svg" alt="line">
+            </figure>
+        </article>
+
+
+
+
+        <article class="photos__wrapper">
+            <h2 class="photos__header" id="photos">Photos</h2>
+
+            <div class="photo-wrapper-img">
+
+
+                <h3 class="photo-name1">新宿3丁目イーストビルイミテーション</h3>
+                <div class="photos-i-suto-wrapper">
+
+
+
+                    <div class="photos-i-suto-left">
+                        <img src="./images/DSC_0126.JPG" alt="i-suto1" class="i-suto1">
+
+                          <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="i-suto-left_mask">
+                                <p class="i-suto-left_text">新宿3丁目イーストビルイミテーション</p>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="photos-i-suto-center">
+                        
+                        <div class="photos-i-suto-center-top">
+                            <img src="./images/DSC_0137.JPG" alt="i-suto2" class="i-suto2">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="i-suto-center_mask-top">
+                                <p class="i-suto-center_text-top">新宿3丁目イーストビルイミテーション</p>
+                            </div>
+                        </div>
+
+                            
+
+                        <div class="photos-i-suto-center-bottom">
+                        <img src="./images/DSC_0132.JPG" alt="i-suto3" class="i-suto3">
+                        <div class="i-suto-center_mask-bottom">
+                            <p class="i-suto-center_text-bottom">新宿3丁目イーストビルイミテーション</p>
+                        </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="photos-i-suto-right">
+                        
+                        <div class="photos-i-suto-right-top">
+                            <img src="./images/DSC_0140.JPG" alt="i-suto4" class="i-suto4">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="i-suto-right_mask-top">
+                                <p class="i-suto-right_text-top">新宿3丁目イーストビルイミテーション</p>
+                            </div>
+                        </div>
+
+                            
+
+                        <div class="photos-i-suto-right-bottom">
+                            <img src="./images/DSC_0142.JPG" alt="i-suto4" class="i-suto4">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="i-suto-right_mask-bottom">
+                                <p class="i-suto-right_text-bottom">新宿3丁目イーストビルイミテーション</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+                <h3 class="photo-name2">新宿町ぐるみプロジェクト</h3>
+                <div class="photos-matigurumi-wrapper">
+
+
+
+                    <div class="photos-matigurumi-left">
+
+                        <div class="photos-matigurumi-left-top">
+                            <img src="./images/DSC_0152.JPG" alt="matigurumi1" class="matigurumi1">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="matigurumi-left_mask-top">
+                                <p class="matigurumi-left_text-top">新宿町ぐるみプロジェクト</p>
+                            </div>
+                        </div>
+
+                            
+
+                            <div class="photos-matigurumi-left-bottom">
+                                <img src="./images/DSC_0137.JPG" alt="matigurumi2" class="matigurumi2">
+
+                                <!-- 画像をhoverした時に表示させる要素 -->
+                                <div class="matigurumi-left_mask-bottom">
+                                    <p class="matigurumi-left_text-bottom">新宿町ぐるみプロジェクト</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="photos-matigurumi-center">
+                        <img src="./images/DSC_0139.JPG" alt="matigurumi3" class="matigurumi3">
+                         <!-- 画像をhoverした時に表示させる要素 -->
+                         <div class="matigurumi-center_mask">
+                            <p class="matigurumi-center_text">新宿町ぐるみプロジェクト</p>
+                         </div>
+                    </div>
+
+
+                    <div class="photos-matigurumi-left">
+
+                    <div class="photos-matigurumi-right-top">
+                        <img src="./images/DSC_0149.JPG" alt="matigurumi4" class="matigurumi4">
+
+                        <!-- 画像をhoverした時に表示させる要素 -->
+                        <div class="matigurumi-right_mask-top">
+                            <p class="matigurumi-right_text-top">新宿町ぐるみプロジェクト</p>
+                        </div>
+                    </div>
+
+                        
+
+                        <div class="photos-matigurumi-right-bottom">
+                            <img src="./images/DSC_0159.JPG" alt="matigurumi5" class="matigurumi5">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="matigurumi-right_mask-bottom">
+                                <p class="matigurumi-right_text-bottom">新宿町ぐるみプロジェクト</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <h3 class="photo-name3">新宿中央公園イルミネーションイベント</h3>
+                <div class="photos-kouen-wrapper">
+
+
+
+                    <div class="photos-kouen-left">
+
+                       
+
+                        <div class="photos-kouen-left-top">
+                             <img src="./images/kouen1.jpg" alt="kouen1" class="kouen1">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="kouen-left_mask-top">
+                                <p class="kouen-left_text-top">新宿中央公園イルミネーションイベント</p>
+                            </div>
+                        </div>
+    
+                            
+    
+                            <div class="photos-kouen-left-bottom">
+                                <img src="./images/kouen2.jpg" alt="matigurumi5" class="matigurumi5">
+    
+                                <!-- 画像をhoverした時に表示させる要素 -->
+                                <div class="kouen-left_mask-bottom">
+                                    <p class="kouen-left_text-bottom">新宿中央公園イルミネーションイベント</p>
+                                </div>
+                            </div>
+
+                    </div>
+
+             
+                    <div class="photos-kouen-center">
+                        
+                        <div class="photos-kouen-center-top">
+                            <img src="./images/kouen3.jpg" alt="kouen3" class="kouen3">
+
+                            <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="kouen-center_mask-top">
+                                <p class="kouen-center_text-top">新宿中央公園イルミネーションイベント</p>
+                            </div>
+                        </div>
+
+                            
+
+                            <div class="photos-kouen-center-bottom">
+                        <img src="./images/kouen4.jpg" alt="kouen4" class="kouen4">
+                        <div class="kouen-center_mask-bottom">
+                            <p class="kouen-center_text-bottom">新宿中央公園イルミネーションイベント</p>
+                        </div>
+                        </div>
+
+                    </div>
+
+                    <div class="photos-kouen-right">
+                        <img src="./images/kouen5.jpg" alt="kouen5" class="kouen5">
+
+                          <!-- 画像をhoverした時に表示させる要素 -->
+                            <div class="kouen-right_mask">
+                                <p class="kouen-right_text">新宿中央公園イルミネーションイベント</p>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+        <article class="movie__wrapper">
+            <h2 class="movie__header" id="movie">Movie</h2>
+            <div>
+                <video src="./images/illumination.mp4" type="video/mp4" class="movie" muted controls playsinline />
+            </div>
+        </article>
+
+        <article class="maps__wrapper">
+            <h2 class="maps__header" id="maps">Maps</h2>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.099062985734!2d139.70485727578853!3d35.69917977258152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d20a752616d%3A0x15360cee23b1fdf0!2z44CSMTY5LTAwNzIg5p2x5Lqs6YO95paw5a6_5Yy65aSn5LmF5L-d77yR5LiB55uu77yS4oiS77yR77yXIOaWsOWuv-OCteODs-OCqOODvOODk-ODqw!5e0!3m2!1sja!2sjp!4v1701608053772!5m2!1sja!2sjp"
+                    width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul>
+                    <li>
+                        <p>新宿3丁目イーストビルイルミネーション</p>
+                    </li>
+                    <li>
+                        <p>2023年11月15日(水)~2024年2月15日(木)</p>
+                    </li>
+                    <li>
+                        <p>東京都新宿区/新宿3丁目イーストビル</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415.4481300208587!2d139.69370754480585!3d35.6927264176344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd597f46cf9%3A0xfca7a2e19ce1fc7d!2z44CMTE9WReOAjeODreODkOODvOODiOODu-OCpOODs-ODh-OCo-OCouODig!5e0!3m2!1sja!2sjp!4v1702369591205!5m2!1sja!2sjp"
+                    width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul>
+                    <li>
+                        <p>新宿町ぐるみプロジェクト</p>
+                    </li>
+                    <li>
+                        <p>2023年11月13日(月)~2023年12月25日(月)</p>
+                    </li>
+                    <li>
+                        <p>東京都新宿区/西新宿周辺</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5004294245505!2d139.68732287578806!3d35.689301072584726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f32ca605ba2f%3A0xe4650320bae9e91f!2z5paw5a6_5Yy656uL5paw5a6_5Lit5aSu5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1701607335048!5m2!1sja!2sjp"
+                    width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul>
+                    <li>
+                        <p>新宿中央公園イルミネーションイベント</p>
+                    </li>
+                    <li>
+                        <p>2023年11月24日(金)~2024年1月14日(日)</p>
+                    </li>
+                    <li>
+                        <p>東京都新宿区/新宿中央公園</p>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
+         <article class="member__wrapper">
+            <h2 class="member__header" id="member">Member</h2>
+            <!-- <img src="./images/member-image.png" alt="member" class="member"> -->
+
+            <img class="member-14" src="./images/member-image14.svg" alt="">
+            <img class="member-04" src="./images/member-image15.svg" alt="">
+            <img class="member-13" src="./images/member-image13.svg" alt="">    
+            <div class="member_01">
+                <div class="maru01">●</div>
+                <div class="member1">山田眞子 (ディレクター)</div>
+            </div>
+            <div class="member_02">
+                <div class="maru02">●</div>
+                <div class="member2">呉島大暉（エンジニア）</div>
+            </div>
+            <div class="member_03">
+                <div class="maru03">●</div>
+                <div class="member3">五津輝哉（エンジニア）</div>
+            </div>
+            <div class="member_04">
+                <div class="member4">田雨シン（デザイナー）</div>
+                <div class="maru04">●</div>
+            </div>
+            <div class="member_05">
+                <div class="member5">坪井航介（デザイナー）</div>
+                <div class="maru05">●</div>
+            </div>
+            <div class="member_06">
+                <div class="member6">近藤凪音（デザイナー）</div>
+                <div class="maru06">●</div>
+            </div>
+            
+
+        </article>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
